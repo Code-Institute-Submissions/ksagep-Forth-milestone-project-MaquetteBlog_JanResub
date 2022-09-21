@@ -4,6 +4,5 @@ from django import forms
 
 class CommentForm(forms.ModelForm):
     class Meta:
-        modell = Comment
+        model = Comment
         fields = ('body',)
-        
