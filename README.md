@@ -1,6 +1,6 @@
 # MaquetteNews Blog for modelers
 
-I took the advice of my mentor and the teachers of the Code Institute's Diploma in Software Development Course and I have created a blog site which I liked and enjoyed the development of it.
+I took the advice of my mentor and the teachers of the Code Institute's Diploma in Software Development Course and I have created a blog site which I liked and enjoyed the development of it. This blog page was inspired mainly by Code Institute therefore I blog' lessons.
 
 For link to this website click [Here](https://ksagep.github.io/).
 
@@ -10,7 +10,7 @@ Design has been focused to *Desktop, Laptop and Tablet first* and *Responsive* b
 
 ## Who is this blog site for?
 
-This blog page contains information about maquettes which are mainly aircrafts. These information would be interesting who makes maquette or who wants a little bit more info about a specific model.
+This blog pages contains information about maquettes which are mainly aircrafts. These information would be interesting who makes maquette or who wants a little bit more info about a specific model.
 
 ## What does this website do?
 
@@ -20,61 +20,59 @@ The website serves as a collection of pictures and short descriptions of differe
 
 ### Strategy Plane
 
-This page was created in a simple way. The information is clear and serves to help the visitors of the website.
+This page was created in a simple way or tried to follow it. The information, picture are clear and serves to help the visitors of the website. The posts are following the same structure and containing the same icons.
 
 ### Scope Plane
 
-In this project You can find the following features:
-* The header and footer are common in every pages
-* Three different pages which are as follows:
+In this project you can find the following features:
+* The header and footer are common in every pages (before login and after it)
+* Two different pages which are as follows:
 
-- Home page contains a picture what I took at the 'Queen's View' and two other buttons to other pages
+- Home page contains six posts and pictures and the possibilities of register of login. The step of visitor is depend that she/he visits the blog as registered user or not.
 
-![My picture](assets/images/home-page.jpg)
+![My picture](assets/images/home%20page.jpg)
 
-- Enjoy page contains pictures about drinks, foods and attractions which could visit during the trip
+- Home page header changes after login and the possibility of register will disappear.
 
-![My picture](assets/images/enjoy-page.jpg)
+![My picture](assets/images/home_page_after_login.jpg)
 
-- Sign Up page contains the opportunity to create a contact with me and I could share some information in private session
+- The post view contains a pictures of maquette or a box art as well as a short description of it. Under this part the registered users could like the post or comment it.
 
-![My picture](assets/images/signup-page.jpg)
+![My picture](assets/images/post_view.jpg)
 
 ### Structure Plane
 
-The three pages provide various information about different themes. These provide a possibility for visitors that they could choose the most appropriate theme they would be interest in. 
+The simple structure of blog page is provide a fast and effective usage for users. Furthermore, it provide a lot of possibilities for future development as you could see in the future features part of README.  
 
 ### Skeleton Plane
 
-Design was focused on big screen (desktop, laptop) primarily but you can use this website on mobile also.
+Design was focused on big screen (desktop, laptop) primarily but you can use this website on mobile also. On bigger screen you find more details in the pictures and easy to follow the text. It was the reason why I chose big screen approach.
 
 ### Surface Plane
 
 * Colors
 
-For navigation and footer part of the website the main aim was the big contrast it was the reason why I used #0a0a0a/black on a light background (beige - rgb 245, 245, 220).
+For navigation and footer part of the website the main aim was the big contrast. At the other parts of the blog page the texts and pictures were harmonized with each other so it is not harmful for eyes. 
 
 * Typography
 
-I used two types of fonts what I downloaded from the Google Fonts families:
+I used one type of font whit two types of thin:
 
-**Tourney** (weight: 700)
-
-**Oswald** (weight: 500)
+**Lato** (weight: 700, 300)
 
 ## Features
 
 ### Existing Features
 
-* Created in HTML5, CSS3, Django, Bootstrap
-* One main page for registration or sign-in and currently two different pages for posts (6 posts by page)
+* Created in HTML5, CSS3, Django
+* One main page for registration or sign-in and currently two different pages for posts (6 posts by page).
 
 ### Features for future implementation
 
 * Grouping of posts according to different scales e.g. 1/72, 1/48, 1/35 etc.
 * Upload more than one picture to the post
 * Special icons before the username
-* 
+* Searh between the posts using a keyword
 
 ## Technologies
 
@@ -82,6 +80,7 @@ I used two types of fonts what I downloaded from the Google Fonts families:
 - CSS3 for style the website
 - Google Fonts for fonts families
 - Font Awesome for social media icons
+- Django for the 'working parts' of the page
 - Git for version control
 - GitHub for storage the files and steps of development of the website
 
@@ -92,14 +91,21 @@ I used two types of fonts what I downloaded from the Google Fonts families:
 - Code Institute Mentor meetings and support
 - Code Institute tutor support
 - Am I Responsive for a responsive image in README 
-- the culture trip for some pictures of the food
-- jolly tomato for image of the Scottish egg
-- wikipedia for image of the black and white pudding
-- cinnamonhotels for image of the grilled Scottish salmon
-- candyfactory for image of the Irn-Bru
-- ongewonlekker for image of the Botanist gin
-- tasteatlas for image of the Atholl Brose, Glayva, Scottish beers
-- wikipedia for image of the Scottish whiskies
+- I took pctures about my maquettes and used these for posts
+
+## Defenders of the page
+This blog has many useful parts which are help the users in one side but in the otherside are protect the page from damage or duplications or unauthorized step etc. You can see below some examples of defenders:
+
+- already registered with this email:
+![My picture](assets/images/already%20registered%20w%20this%20email.jpg)
+
+- same password:
+![My picture](assets/images/same%20password.jpg)
+
+- try to use admin site without permission:
+![My picture](assets/images/try%20to%20us%20eadmin%20site%20without%20permission.jpg)
+
+
 
 ## Testing
 
@@ -133,10 +139,10 @@ Lighthouse desktop assessment:
 
 I used two repositories during the development: GitPod for local repository and GitHub for remote or background repository. 
 
-I managed the versions with the followung process:
+I managed the versions with the following process:
 - I created a repository in GitHub
 - I opened and developped the repository in GitPod
-- I created and developped the files and folders in GitPod
+- I created and developped varied files and folders in GitPod
 - I saved and pushed my works to GitHub repository:
     1. git add . - adding work to git
     2. git commit -m "Commit message" - to commit the stage of work
@@ -186,42 +192,6 @@ To log into the Heroku toolbelt CLI:
 
 You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
 ## FAQ about the uptime script
 
 **Why have you added this script?**
@@ -254,7 +224,3 @@ rm .vscode/uptime.sh
 **Anything more?**
 
 Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
