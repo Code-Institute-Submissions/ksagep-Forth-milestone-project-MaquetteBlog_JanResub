@@ -158,7 +158,7 @@ The buttons of the website were tested locally and these worked properly.
 
 ### Responsiveness
 
-I used Google Chrome Dev Tools for this exercise. I tested for mobile and desktop devices. According to the tool, some images were big for mobile devices and the downloads were slow.
+I used Google Chrome Dev Tools for this exercise. I tested for mobile and desktop devices. According to the tool, some images were big for mobile devices and the downloads were slow. It is the reason for lower result but I could not decrease the size of the pictures because the average size was 55 kB. If I decrease the size more and more it is dangerous for resolution of pictures. 
 
 Lighthouse mobile assessment:
 ![My Image](assets/images/lighthouse_mobile_assessment.jpg)
@@ -172,9 +172,15 @@ I used two repositories during the development: GitPod for local repository and 
 
 I managed the versions with the following process:
 - I created a repository in GitHub
-- I opened and developped the repository in GitPod
+- I created User Stories in GitHub
+- I opened and developped the repository in GitPod and use during the development the different parts of User Stories
+- I used three parts of User Stories:Todo, In Progress and Done
+
+![My Image](assets/images/user%20stories.jpg)
+
 - I created and developped varied files and folders in GitPod
-- I saved and pushed my works to GitHub repository:
+- I put the issues in the relevant part according to the phase of development (start in Todo and put the In Progress while I worked on it and put the Done if I finished the development)
+- I saved and pushed my works to GitHub repository after every important step of development:
     1. git add . - adding work to git
     2. git commit -m "Commit message" - to commit the stage of work
     3. git push - to update my work in GitHub
@@ -186,72 +192,3 @@ The steps of the publishing on the GitHub were as follow:
     1. **"Settings"** on the repository
     2. **"Source"** of "GitHub Pages" selected *master for Branch* and saved it
     3. The website was published on GitHub Pages and the link was provided in the same section.
-
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome ksagep,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
