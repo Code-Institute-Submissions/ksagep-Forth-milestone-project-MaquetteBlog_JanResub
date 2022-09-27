@@ -2,7 +2,7 @@
 
 I took the advice of my mentor and the teachers of the Code Institute's Diploma in Software Development Course and I have created a blog site which I liked and enjoyed the development of it. This blog page was inspired mainly by Code Institute: 'I think, therefore I blog' lessons.
 
-For link to this website click [Here](https://ksagep.github.io/).
+For link to this website click [Here](https://maquettenews.herokuapp.com/).
 
 Design has been focused to *Desktop, Laptop and Tablet first* and *Responsive* but it is also working on mobile assets.
 
@@ -124,6 +124,7 @@ Furthermore, the admin can manage (add, delete, edit) sites, attachments and soc
 - I took pctures about my maquettes and used these for posts
 
 ## Defenders of the blog site
+
 This blog has many useful parts which are help the users in one side but in the otherside are protect the page from damage or duplications or unauthorized step etc. You can see below some examples of defenders:
 
 - somebody already registered with this email (the system save the email address if the user give the email address at the registration and compares with those stored in the database):
@@ -146,11 +147,11 @@ Website was tested in Google Chrome, Opera, Microsoft Edge and Safari. On each b
 
 It was tested on  Macbook Pro, Apple iPhone 13 Pro and Samsung A6 and A10 mobile phones and the website worked on these type of devices.
 
-### Validators
+### Validation with pythonchecker.com
 
-The website was checked by W3C HTML validator and it did not reported any issues. You can find the result [Here](assets/images/W3C%20HTML%20assessment.jpg).
+I validated every py file of my app with pythonchecker.com validator. The most common error was that I did not put space around the operators. After the managing errors everything was all right according to the validator. You can see below an example for assessment after managing the errors (manage.py):
 
-The website was checked by W3C CSS validator and it did not reported any issues. You can find the result [Here](assets/images/W3C%20CSS%20assessment.jpg).
+![My Image](assets/images/manage%20py%20checking.jpg)
 
 ### Local testing
 
@@ -187,8 +188,13 @@ I managed the versions with the following process:
 
 ## Publish the project
 
-The steps of the publishing on the GitHub were as follow:
+The steps of the publishing on the Heroku were as follow:
     
-    1. **"Settings"** on the repository
-    2. **"Source"** of "GitHub Pages" selected *master for Branch* and saved it
-    3. The website was published on GitHub Pages and the link was provided in the same section.
+    1. I created an app name and set the location (Europe)
+    2. In the **"Settings"** I managed the config vars part
+![My Image](assets/images/settings%20config%20vars.jpg)
+    3. In the buildpacks I chose heroku/python
+    4. In the Deploy section I create a connection between GitHub and Heroku
+    5. With the Deploy Branch button I created a deployed app
+![My Image](assets/images/deploy_heroku.jpg)
+    6. The website was published on Heroku Page and the link was provided in the same section.
