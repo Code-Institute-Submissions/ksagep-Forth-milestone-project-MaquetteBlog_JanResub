@@ -1,6 +1,6 @@
 # MaquetteNews Blog for modelers
 
-I took the advice of my mentor and the teachers of the Code Institute's Diploma in Software Development Course and I have created a blog site which I liked and enjoyed the development of it. This blog page was inspired mainly by Code Institute therefore I blog' lessons.
+I took the advice of my mentor and the teachers of the Code Institute's Diploma in Software Development Course and I have created a blog site which I liked and enjoyed the development of it. This blog page was inspired mainly by Code Institute: 'I think, therefore I blog' lessons.
 
 For link to this website click [Here](https://ksagep.github.io/).
 
@@ -14,7 +14,7 @@ This blog pages contains information about maquettes which are mainly aircrafts.
 
 ## What does this website do?
 
-The website serves as a collection of pictures and short descriptions of different maquettes. The registered users could like or comment any posts. Possibility of comment could provide a base for small conversation between users. The non-registered users can see the posts but they can not like or comment the posts.
+The website serves as a collection of pictures and short descriptions of different maquettes. The registered users could take posts, like or comment any posts. Possibility of comment could provide a base for small conversation between users. The non-registered users can see the posts but they can not take a post, like or comment the posts.
 
 ## UX 5 Planes
 
@@ -65,7 +65,9 @@ I used one type of font whit two types of thin:
 ### Existing Features
 
 * Created in HTML5, CSS3, Django
-* One main page for registration or sign-in and currently two different pages for posts (6 posts by page).
+* One main page for registration or sign-in and currently two different pages for posts (6 posts by page)
+* The users have a possibility to save its username and password for future visits if they put a stick to the 'Remember me' square
+* One page for 'Sign out'.
 
 ### Features for future implementation
 
@@ -73,6 +75,34 @@ I used one type of font whit two types of thin:
 * Upload more than one picture to the post
 * Special icons before the username
 * Searh between the posts using a keyword
+
+### Admin feature
+
+Admin or Superuser has special permission for blog site. She/he/they can sign-in to the blog
+
+![My picture](assets/images/admin%20sign%20in.jpg)
+
+or use a special page which is under 'Django administration / Site administration'.
+
+![My picture](assets/images/django%20administration.jpg)
+
+On this site admin can manage the email addresses, delete or veify these. Before verification, next to the email address you can find a red cross marker which will change to a white stick in green base after verification.
+
+![My picture](assets/images/email%20address%20verification.jpg)
+
+At the authorisation and authentication part the admin could create groups from the registered users or manage them separately.
+
+![My picture](assets/images/manage%20users.jpg)
+
+From the blog site perspective the most important part of the admin site is the 'Blog administration'. This part provide possibility for admin to manage the comments from one side. She/he/they could approve or delete comments and in the latter case could prevent the using of unauthorized phrase or make unnecessary tension between the users.
+
+![My picture](assets/images/choose%20approve%20or%20delete%20a%20comment.jpg)
+
+From the other side, this part give a possibility to add or delete posts to the blog. Before the publishing a post, the admin could check it and she/he/they decide that it is fine according to the blog rules or not.
+
+![My picture](assets/images/post%20list%20for%20approval.jpg)
+
+Furthermore, the admin can manage (add, delete, edit) sites, attachments and social accounts (accounts, applications, applications tokens). 
 
 ## Technologies
 
@@ -93,19 +123,20 @@ I used one type of font whit two types of thin:
 - Am I Responsive for a responsive image in README 
 - I took pctures about my maquettes and used these for posts
 
-## Defenders of the page
+## Defenders of the blog site
 This blog has many useful parts which are help the users in one side but in the otherside are protect the page from damage or duplications or unauthorized step etc. You can see below some examples of defenders:
 
-- already registered with this email:
+- somebody already registered with this email (the system save the email address if the user give the email address at the registration and compares with those stored in the database):
 ![My picture](assets/images/already%20registered%20w%20this%20email.jpg)
 
-- same password:
+- same password (at the registration have to type two times the same password without any mistake):
 ![My picture](assets/images/same%20password.jpg)
 
-- try to use admin site without permission:
+- try to use admin site without permission (the users have not permission to use the admin site):
 ![My picture](assets/images/try%20to%20us%20eadmin%20site%20without%20permission.jpg)
 
-
+- try to register without fill the necessary fields:
+![My picture](assets/images/fill%20the%20fields.jpg)
 
 ## Testing
 
