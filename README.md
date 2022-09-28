@@ -20,7 +20,7 @@ The website serves as a collection of pictures and short descriptions of differe
 
 ### Strategy Plane
 
-This page was created in a simple way or tried to follow it. The information, picture are clear and serves to help the visitors of the website. The posts are following the same structure and containing the same icons.
+This page was created in a simple way or tried to follow it. The information, pictures are clear and serve to help the visitors of the website. The posts are following the same structure and containing the same icons.
 
 ### Scope Plane
 
@@ -28,7 +28,7 @@ In this project you can find the following features:
 * The header and footer are common in every pages (before login and after it)
 * Two different pages which are as follows:
 
-- Home page contains six posts and pictures and the possibilities of register of login. The step of visitor is depend that she/he visits the blog as registered user or not.
+- Home page contains six posts and pictures and the possibilities of register or login. The step of visitor is depend that she/he/they visits the blog as registered user or not.
 
 ![My picture](assets/images/home%20page.jpg)
 
@@ -36,7 +36,7 @@ In this project you can find the following features:
 
 ![My picture](assets/images/home_page_after_login.jpg)
 
-- The post view contains a pictures of maquette or a box art as well as a short description of it. Under this part the registered users could like the post or comment it.
+- The post view contains a pictures of maquette or a box art as well as a short description of the kit. Under this part the registered users could like the post or comment it.
 
 ![My picture](assets/images/post_view.jpg)
 
@@ -72,9 +72,11 @@ I used one type of font whit two types of thin:
 ### Features for future implementation
 
 * Grouping of posts according to different scales e.g. 1/72, 1/48, 1/35 etc.
+* Grouping of posts according to different type of aircrafts, helicopters, figures, cars, motorcycles etc.
 * Upload more than one picture to the post
 * Special icons before the username
 * Searh between the posts using a keyword
+* Create 'Rules of the blog'
 
 ### Admin feature
 
@@ -86,7 +88,7 @@ or use a special page which is under 'Django administration / Site administratio
 
 ![My picture](assets/images/django%20administration.jpg)
 
-On this site admin can manage the email addresses, delete or veify these. Before verification, next to the email address you can find a red cross marker which will change to a white stick in green base after verification.
+On this site admin can manage the email addresses, delete or verify these. Before verification, next to the email address you can find a red cross marker which will change to a white stick in green base after verification.
 
 ![My picture](assets/images/email%20address%20verification.jpg)
 
@@ -111,7 +113,7 @@ Furthermore, the admin can manage (add, delete, edit) sites, attachments and soc
 - Google Fonts for fonts families
 - Font Awesome for social media icons
 - Django for the 'working parts' of the page
-- Git for version control
+- Gitpod for version control
 - GitHub for storage the files and steps of development of the website
 
 ## Resources
@@ -121,7 +123,7 @@ Furthermore, the admin can manage (add, delete, edit) sites, attachments and soc
 - Code Institute Mentor meetings and support
 - Code Institute tutor support
 - Am I Responsive for a responsive image in README 
-- I took pictures about my maquettes and used these for posts
+- I took pictures about my maquettes and used these for posts and I created descriptions and comments for its
 - I took the placeholder picture from timeouttoys.co.za webpage
 
 ## Defenders of the blog site
@@ -146,7 +148,7 @@ This blog has many useful parts which are help the users in one side but in the 
 
 Website was tested in Google Chrome, Opera, Microsoft Edge and Safari. On each browser this website works properly (functionality, visuality).
 
-It was tested on  Macbook Pro, Apple iPhone 13 Pro and Samsung A6 and A10 mobile phones and the website worked on these type of devices.
+It was tested on  Google Developper Tools and the website worked on these type of devices.
 
 ### Validation with pythonchecker.com
 
@@ -156,7 +158,7 @@ I validated every py file of my app with pythonchecker.com validator because the
 
 ### Local testing
 
-The buttons of the website were tested locally and these worked properly.
+The buttons of the app were tested locally and these worked properly.
 
 ### Responsiveness
 
