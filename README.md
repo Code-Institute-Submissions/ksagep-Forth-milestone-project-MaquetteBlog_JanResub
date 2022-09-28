@@ -2,11 +2,11 @@
 
 I took the advice of my mentor and the teachers of the Code Institute's Diploma in Software Development Course and I have created a blog site which I liked and enjoyed the development of it. This blog page was inspired mainly by Code Institute: 'I think, therefore I blog' lessons.
 
-For link to this website click [Here](https://maquettenews.herokuapp.com/).
+For link to this website click [Here](https://8000-ksagep-forthmilestonepr-zcm1zcr3baz.ws-eu67.gitpod.io/).
 
 Design has been focused to *Desktop, Laptop and Tablet first* and *Responsive* but it is also working on mobile assets.
 
-![My Image](media/pictures/xx.jpg)
+![My Image](assets/images/i_am_responsive.jpg)
 
 ## Who is this blog site for?
 
@@ -121,7 +121,8 @@ Furthermore, the admin can manage (add, delete, edit) sites, attachments and soc
 - Code Institute Mentor meetings and support
 - Code Institute tutor support
 - Am I Responsive for a responsive image in README 
-- I took pctures about my maquettes and used these for posts
+- I took pictures about my maquettes and used these for posts
+- I took the placeholder picture from timeouttoys.co.za webpage
 
 ## Defenders of the blog site
 
@@ -149,7 +150,7 @@ It was tested on  Macbook Pro, Apple iPhone 13 Pro and Samsung A6 and A10 mobile
 
 ### Validation with pythonchecker.com
 
-I validated every py file of my app with pythonchecker.com validator. The most common error was that I did not put space around the operators. After the managing errors everything was all right according to the validator. You can see below an example for assessment after managing the errors (manage.py):
+I validated every py file of my app with pythonchecker.com validator because the pep8online.com [expired](assets/images/pep8%20expired.jpg) and it is not working anymore as a validator. The most common error was that I did not put space around the operators. After the managing errors everything was all right according to the validator. You can see below an example for assessment after managing the errors (manage.py):
 
 ![My Image](assets/images/manage%20py%20checking.jpg)
 
