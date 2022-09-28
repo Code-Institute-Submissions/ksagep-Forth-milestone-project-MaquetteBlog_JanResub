@@ -2,7 +2,7 @@
 
 I took the advice of my mentor and the teachers of the Code Institute's Diploma in Software Development Course and I have created a blog site which I liked and enjoyed the development of it. This blog page was inspired mainly by Code Institute: 'I think, therefore I blog' lessons.
 
-For link to this website click [Here](https://8000-ksagep-forthmilestonepr-zcm1zcr3baz.ws-eu67.gitpod.io/).
+For link to this website click [Here](https://maquettenews.herokuapp.com/).
 
 Design has been focused to *Desktop, Laptop and Tablet first* and *Responsive* but it is also working on mobile assets.
 
