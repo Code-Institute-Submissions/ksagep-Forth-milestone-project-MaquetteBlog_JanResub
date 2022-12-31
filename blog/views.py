@@ -1,3 +1,4 @@
+"""List of parts of views"""
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
@@ -6,6 +7,7 @@ from .forms import CommentForm
 
 
 class PostList(generic.ListView):
+    """Define the order and number of post by page"""
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
@@ -13,8 +15,9 @@ class PostList(generic.ListView):
 
 
 class PostDetail(View):
-
+    """Detail of view of verified post"""
     def get(self, request, slug, *args, **kwargs):
+        """Describe the view of post on the front page"""
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by("-created_on")
@@ -33,9 +36,9 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             },
         )
-    
-    def post(self, request, slug, *args, **kwargs):
 
+    def post(self, request, slug, *args, **kwargs):
+        """Describe the view of comments and likes"""
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by("-created_on")
@@ -67,8 +70,9 @@ class PostDetail(View):
 
 
 class PostLike(View):
-    
+    """Describe the view of like of post"""
     def post(self, request, slug, *args, **kwargs):
+        """Define the counting method of likes"""
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)

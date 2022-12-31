@@ -3,6 +3,7 @@ from .models import Post, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
 
+# Admin could manage the posts
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
 
@@ -13,6 +14,7 @@ class PostAdmin(SummernoteModelAdmin):
     summernote_fields = ('content',)
 
 
+# Admin could manage the comments which are related to posts
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('name', 'body', 'post', 'created_on', 'approved')

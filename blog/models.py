@@ -1,12 +1,14 @@
+"""Administrative tasks for build a model"""
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
-
+"""Define the two variants of status"""
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Post(models.Model):
+    """Describe the charactheristics of parts of post"""
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -23,19 +25,20 @@ class Post(models.Model):
         )
 
     class Meta:
+        """Define the order of the posts"""
         ordering = ['-created_on']
-
 
     def __str__(self):
         return self.title
 
-
     def number_of_likes(self):
+        """Create likes counter"""
         return self.likes.count()
 
-class Comment(models.Model):
 
-    post = models.ForeignKey(Post, on_delete = models.CASCADE, related_name='comments')
+class Comment(models.Model):
+    """Describe the parts of comments"""
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
     name = models.CharField(max_length=80)
     email = models.EmailField()
     body = models.TextField()
@@ -43,8 +46,8 @@ class Comment(models.Model):
     approved = models.BooleanField(default=False)
 
     class Meta:
+        """Define the order of the comments"""
         ordering = ['-created_on']
-
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
