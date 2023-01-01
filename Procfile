@@ -1,1 +1,1 @@
-web:gunicorn maquettenews.wsgi:application
+web: gunicorn maquettenews.wsgi:application
