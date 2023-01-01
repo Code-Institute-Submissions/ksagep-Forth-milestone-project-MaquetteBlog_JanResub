@@ -25,7 +25,7 @@ class Post(models.Model):
         )
 
     class Meta:
-        """Define the order of the posts"""
+        """Define the descending order of the posts"""
         ordering = ['-created_on']
 
     def __str__(self):
@@ -46,8 +46,8 @@ class Comment(models.Model):
     approved = models.BooleanField(default=False)
 
     class Meta:
-        """Define the order of the comments"""
-        ordering = ['-created_on']
+        """Define the ascending order of the comments"""
+        ordering = ['created_on']
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
