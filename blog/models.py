@@ -29,6 +29,7 @@ class Post(models.Model):
         ordering = ['-created_on']
 
     def __str__(self):
+        """Display the title of the post"""
         return self.title
 
     def number_of_likes(self):

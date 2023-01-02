@@ -3,7 +3,7 @@ from .models import Post, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
 
-# Admin could manage the posts
+# Admin could manage the registration with two arguments
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
 
