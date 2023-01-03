@@ -1,4 +1,4 @@
-"""List of parts of comment form"""
+"""List of libraries of comment form"""
 from .models import Comment
 from django import forms
 
