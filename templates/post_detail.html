@@ -96,7 +96,10 @@
                     Your comment is awaiting approval
                 </div>
                 {% else %}
-                
+                <div class="alert alert-warning" role="alert">
+                <strong>You cannot submit empty comment form.</strong>
+                </div>
+                {% endif %}
                 {% if user.is_authenticated %}
 
                 <h3>Leave a comment:</h3>
@@ -106,14 +109,8 @@
                     {% csrf_token %}
 
                     <button type="submit" class="btn btn-signup btn-lg">Submit</button>
-
-                    {% else %}
-                    <div class="alert alert-warning" role="alert">
-                    <strong>You cannot submit empty comment form.</strong>
-                    </div>
-                     
                 </form>
-                {% endif %}             
+                             
                 {% endif %}
                 
             </div>
