@@ -104,12 +104,17 @@
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
+
+                    {% if commented%}
                     <button type="submit" class="btn btn-signup btn-lg">Submit</button>
-                </form>
-                <div class="alert alert-warning" role="alert">
+
+                    {% else %}
+                    <div class="alert alert-warning" role="alert">
                     <strong>You cannot submit empty comment form.</strong>
-                </div>
-                {% endif %}              
+                    </div>
+                    {% endif %} 
+                </form>
+                {% endif %}             
                 {% endif %}
                 
             </div>
