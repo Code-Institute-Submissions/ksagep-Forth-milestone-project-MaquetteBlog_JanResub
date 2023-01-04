@@ -96,8 +96,8 @@
                     Your comment is awaiting approval
                 </div>
                 {% else %}
-                <div class="submit_empty_comment_form" role="alert">
-                    You cannot submit empty comment form.
+                <div class="alert alert-warning" role="alert">
+                    <strong>You cannot submit empty comment form.</strong>
                 </div>
                 {% endif %}
                 {% if user.is_authenticated %}
