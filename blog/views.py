@@ -32,7 +32,7 @@ class PostDetail(View):
             {
                 "post": post,
                 "comments": comments,
-                "commented": commented,
+                "commented": False,
                 "liked": liked,
                 "comment_form": CommentForm()
             },
