@@ -73,8 +73,13 @@
             <h3>Comments:</h3>
             
             <div class="card-body">
+                
+                <div class="col-1">
+                    
+                    {{ comments | length }}
+                    
+                </div>
                 <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
-                {{ comments | length }}
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">

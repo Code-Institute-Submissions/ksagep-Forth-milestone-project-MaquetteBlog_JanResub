@@ -36,6 +36,10 @@ class Post(models.Model):
         """Create likes counter"""
         return self.likes.count()
 
+    def number_of_comments(self):
+        """Create comments counter"""
+        return self.comments.count()
+
 
 class Comment(models.Model):
     """Describe the parts of comments"""
