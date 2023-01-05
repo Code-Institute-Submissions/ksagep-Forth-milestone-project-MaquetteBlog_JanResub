@@ -13,7 +13,7 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" width="100%">
+                <img src="assets/images/Build your dream 3.jpg" width="100%">
                 {% else %}
                 <img src=" {{ post.featured_image.url }}" width="100%">
                 {% endif %}
@@ -70,8 +70,6 @@
     <div class="row">
         
         <div class="col-md-8 card mb-4  mt-3 ">
-            <h3>Comments:</h3>
-            
             <div class="card-body">
                 
                 <div class="col-1">
@@ -106,7 +104,9 @@
                     Your comment is awaiting approval
                 </div>
                 {% else %}
-                
+                <div class="alert alert-warning" role="alert">
+                    You can't submit an empty comment form!
+                </div>
                 {% if user.is_authenticated %}
 
                 <h3>Leave a comment:</h3>
@@ -120,6 +120,57 @@
                 {% endif %}
                 {% endif %}
             </div>
+            <section>
+                <div class="col-12 col-md-8 offset-md-2">
+                    <div class="row">
+                        <div class="col text-center mt-4">
+                            <h2 class="heading small-heading">Comments</h2>
+                        </div>
+                    </div>
+                    {% for comment in comments %}
+                    <p>
+                        <strong>{{ comment.name }}</strong> <small>{{ comment.date }}</small><br>
+                        {{ comment.body }}
+                    </p>
+                    {% if request.user.is_superuser %}
+                    <!-- Button trigger delete comment modal -->
+                    <span data-toggle="modal" data-target="#deleteComment">
+                        <button type="button" class="btn btn-outline-danger" data-toggle="tooltip"
+                            data-placement="right" title="Delete Comment">
+                            <i class="far fa-trash-alt"></i>
+                        </button>
+                    </span>
+                    <!-- Modal -->
+                    <div class="modal fade" id="deleteComment" tabindex="-1" role="dialog"
+                        aria-labelledby="deleteCommentModal" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="deleteCommentModal">Delete Comment</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Are you sure you want to delete this comment?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <a class="btn btn-danger" href="{% url 'delete_comment' comment.id %}">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <!-- No hr element after last comment -->
+                    {% if not forloop.last %}
+                    <hr>
+                    {% endif %}
+                    {% empty %}
+                    <p class="text-center">No comments yet!</p>
+                    {% endfor %}
+                </div>
+            </section>
         </div>
     </div>
 </div>
