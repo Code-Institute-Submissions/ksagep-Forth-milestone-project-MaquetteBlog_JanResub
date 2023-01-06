@@ -70,13 +70,9 @@
     <div class="row">
         
         <div class="col-md-8 card mb-4  mt-3 ">
+            <h3>Comments:</h3>
             <div class="card-body">
                 
-                <div class="col-1">
-                    
-                    {{ comments | length }}
-                    
-                </div>
                 <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
@@ -116,41 +112,9 @@
                     {% csrf_token %}
                     <button type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
-                
                 {% endif %}
-                {% endif %}
+                {% endif %}                
             </div>
-            <section>
-                <div class="col-12 col-md-8 offset-md-2">
-                    <div class="row">
-                        <div class="col text-center mt-4">
-                            <h2 class="heading small-heading">Comments</h2>
-                        </div>
-                    </div>
-                    {% for comment in comments %}
-                    <p>
-                        <strong>{{ comment.name }}</strong> <small>{{ comment.date }}</small><br>
-                        {{ comment.body }}
-                    </p>
-                    {% if request.user.is_superuser %}
-                    <!-- Button trigger delete comment modal -->
-                    <span data-toggle="modal" data-target="#deleteComment">
-                        <button type="button" class="btn btn-outline-danger" data-toggle="tooltip"
-                            data-placement="right" title="Delete Comment">
-                            <i class="far fa-trash-alt"></i>
-                        </button>
-                    </span>
-                    
-                    {% endif %}
-                    <!-- No hr element after last comment -->
-                    {% if not forloop.last %}
-                    <hr>
-                    {% endif %}
-                    {% empty %}
-                    <p class="text-center">No comments yet!</p>
-                    {% endfor %}
-                </div>
-            </section>
         </div>
     </div>
 </div>
