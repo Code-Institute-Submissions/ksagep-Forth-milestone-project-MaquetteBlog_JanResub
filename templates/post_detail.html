@@ -100,9 +100,11 @@
                     Your comment is awaiting approval
                 </div>
                 {% else %}
+
                 <div class="alert alert-warning" role="alert">
-                    You can't submit an empty comment form!
+                    You cannot submit an empty comment form!
                 </div>
+                
                 {% if user.is_authenticated %}
 
                 <h3>Leave a comment:</h3>
@@ -110,8 +112,9 @@
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                    <button type="submit" class="btn btn-signup btn-lg">Submit</button>                    
                 </form>
+                
                 {% endif %}
                 {% endif %}                
             </div>

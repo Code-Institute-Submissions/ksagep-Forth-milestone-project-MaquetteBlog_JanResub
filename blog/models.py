@@ -23,7 +23,7 @@ class Post(models.Model):
     likes = models.ManyToManyField(
         User, related_name='blog_likes', blank=True
         )
-
+    
     class Meta:
         """Define the descending order of the posts"""
         ordering = ['-created_on']
