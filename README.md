@@ -20,7 +20,7 @@ The website serves as a collection of pictures and short descriptions of differe
 
 ### Strategy Plane
 
-This page was created in a simple way or tried to follow it. The information, pictures are clear and serve to help the visitors of the website. The posts are following the same structure and containing the same icons.
+The pages were created in a simple way. The information, pictures are clear and serve to help the visitors of the website. The posts are following the same structure and containing the same 'like' and 'comments' icons. There are sort excerpts under the title of the posts. The comments built on a simple way and contain the name of the user, the date of commenting and finally the content of the comments. I created 'Delete' and 'Update' buttons under every comments.
 
 ### Scope Plane
 
@@ -28,21 +28,25 @@ In this project you can find the following features:
 * The header and footer are common in every pages (before login and after it)
 * Two different pages which are as follows:
 
-- Home page contains six posts and pictures and the possibilities of register or login. The step of visitor is depend that she/he/they visits the blog as registered user or not.
+- Home page contains three posts and pictures and the possibilities of register or login. The step of visitor is depend that she/he/they visits the blog as registered user or not.
 
-![My picture](assets/images/home%20page.jpg)
+![My picture](assets/images/front_page_1.jpg)
 
 - Home page header changes after login and the possibility of register will disappear.
 
-![My picture](assets/images/home_page_after_login.jpg)
+![My picture](assets/images/front_page_after_login.jpg)
 
-- The post view contains a pictures of maquette or a box art as well as a short description of the kit. Under this part the registered users could like the post or comment it.
+- The post view contains a pictures of maquette or a box art as well as a short description of the kit. 
 
-![My picture](assets/images/post_view.jpg)
+![My picture](assets/images/post_view_1.jpg)
+
+Under this part the registered users could like the post or comment it. I created a small warning message that the user cannot submit the empty comment form. Under the approved and posted comment there are two buttons: Delete and Update. These buttons provide possibilities for user, who commented the post, delete the own post or edit this. 
+
+![My picture](assets/images/post_view_2.jpg)
 
 ### Structure Plane
 
-The simple structure of blog page is provide a fast and effective usage for users. Furthermore, it provide a lot of possibilities for future development as you could see in the future features part of README.  
+The simple structure of blog page is provide a fast and effective usage for users. Furthermore, it provide a lot of possibilities for future development as you could see in the 'Future features' part of README.  
 
 ### Skeleton Plane
 
@@ -65,7 +69,7 @@ I used one type of font whit two types of thin:
 ### Existing Features
 
 * Created in HTML5, CSS3, Django
-* One main page for registration or sign-in and currently two different pages for posts (6 posts by page)
+* One main page for registration or sign-in and currently two different pages for posts (3 posts by page)
 * The users have a possibility to save its username and password for future visits if they put a stick to the 'Remember me' square
 * One page for 'Sign out'.
 
@@ -77,34 +81,79 @@ I used one type of font whit two types of thin:
 * Special icons before the username
 * Searh between the posts using a keyword
 * Create 'Rules of the blog'
+* Add 'Like' button and counter to the comments.
 
 ### Admin feature
 
-Admin or Superuser has special permission for blog site. She/he/they can sign-in to the blog
+Admin or Superuser has special permission for blog site. She/he/they can sign-in to the blog.
 
-![My picture](assets/images/admin%20sign%20in.jpg)
+![My picture](assets/images/admin_sign_in.jpg)
 
-or use a special page which is under 'Django administration / Site administration'.
+On the front page the admin can manage the email addresses, blogs, comments. Therefore the admin can create and approve group of users or manage single user. On this page we could find the recent activities of admin also. In the menu line the admin could change Her/his/their password or log out about this page.
 
-![My picture](assets/images/django%20administration.jpg)
+![My picture](assets/images/admin_site_front.jpg)
 
-On this site admin can manage the email addresses, delete or verify these. Before verification, next to the email address you can find a red cross marker which will change to a white stick in green base after verification.
+At the authorisation and authentication part the admin could create groups from the registered users or manage them separately. On the attached image you can see that this app has only one person who has admin authorities.
 
-![My picture](assets/images/email%20address%20verification.jpg)
+![My picture](assets/images/manage_users.jpg)
 
-At the authorisation and authentication part the admin could create groups from the registered users or manage them separately.
+From the blog site perspective the most important part of the admin site is the 'Blog administration'. This part provide possibility for admin to manage the comments from one side. She/he/they could approve or delete comments and in the latter case could prevent the using of unauthorized phrase or make unnecessary tension between the users. Before approval a small, white 'X' in a red circle sign that the comment is non-approved. After approval the sign will change for a white stick in a green circle.
 
-![My picture](assets/images/manage%20users.jpg)
-
-From the blog site perspective the most important part of the admin site is the 'Blog administration'. This part provide possibility for admin to manage the comments from one side. She/he/they could approve or delete comments and in the latter case could prevent the using of unauthorized phrase or make unnecessary tension between the users.
-
-![My picture](assets/images/choose%20approve%20or%20delete%20a%20comment.jpg)
+![My picture](assets/images/choose_approve_or_delete_comment.jpg)
 
 From the other side, this part give a possibility to add or delete posts to the blog. Before the publishing a post, the admin could check it and she/he/they decide that it is fine according to the blog rules or not.
 
-![My picture](assets/images/post%20list%20for%20approval.jpg)
+![My picture](assets/images/post_list_for_approval.jpg)
 
-Furthermore, the admin can manage (add, delete, edit) sites, attachments and social accounts (accounts, applications, applications tokens). 
+Furthermore, the admin can manage (add, delete, edit) sites, attachments and social accounts (accounts, applications, applications tokens).
+
+When admin finished Her/his/their works leave the page with log out button.
+
+### User feature
+
+If the user wants to use the possibility of comment and like have to register Her-/him-/theirself at first on the register page. Have to create a username and a password but provide the email address is optional. After click on the 'Sign up' button and the registration is finished.
+
+![My picture](assets/images/register_page.jpg)
+
+Only the registered user can sign in the blog with username and password. You can find a small 'Remember Me' checkbox under the password which provide the possibility that the system will not forget the password of the user and next time do not have to type the password.
+
+![My picture](assets/images/user_sign_in.jpg)
+
+If the username and/or password was/were not correct you will get an error message.
+
+![My picture](assets/images/incorrect_user_or_password.jpg)
+
+In the case of successful sign-in you can enter the blog and a short message will appear about it for **3 seconds**. After it the user can surf on the pages, add comments or likes to the posts.
+
+![My picture](assets/images/successful_user_login.jpg)
+
+The authenticated users can leave comments for any posts. The length of the comment is no more than 200 charachters.
+
+![My picture](assets/images/user_comment.jpg)
+
+After click on the submit button a short warning message will appear on the screen: 'Your comment is awaiting for approval.'
+
+![My picture](assets/images/comment_approval.jpg)
+
+After comment was approved by admin, under the post will appear the new comment and the comment counter will give plus one to the previous amount. The comment contains: the name of user, date of commenting and the content of the comment.
+
+![My picture](assets/images/after_comment_approval.jpg)
+
+User can comment any post if She/he/they want. Before the click on the 'Like' button you can see on the screen the outline of icon.
+
+![My picture](assets/images/before_like.jpg)
+
+After click on the 'Like' button you can see on the screen the filled icon and the like counter will give plus one to the previous amount.
+
+![My picture](assets/images/after_like.jpg)
+
+When user finished Her/his/their surfing in the blog leave the page with log out button. On the screen will appear the 'Sign out' button and after click on it She/he/they will leave the page.
+
+![My picture](assets/images/sign_out.jpg)
+
+After a successful sign out the system will send a message for 3 seconds.
+
+![My picture](assets/images/sign_out_message.jpg)
 
 ## Technologies
 
@@ -125,22 +174,25 @@ Furthermore, the admin can manage (add, delete, edit) sites, attachments and soc
 - Am I Responsive for a responsive image in README 
 - I took pictures about my maquettes and used these for posts and I created descriptions and comments for its
 - I took the placeholder picture from timeouttoys.co.za webpage
+- Youtube/Tech with Tim - some idea
+- StackOverflow.com - some thoughts
+- w3school.com - some thoughts
+- geeksforgeeks.com - some idea
+- djangocentral.com - some thoughts
 
 ## Defenders of the blog site
 
 This blog has many useful parts which are help the users in one side but in the otherside are protect the page from damage or duplications or unauthorized step etc. You can see below some examples of defenders:
 
 - somebody already registered with this email (the system save the email address if the user give the email address at the registration and compares with those stored in the database):
-![My picture](assets/images/already%20registered%20w%20this%20email.jpg)
+![My picture](assets/images/already_registered_email.jpg)
 
 - same password (at the registration have to type two times the same password without any mistake):
-![My picture](assets/images/same%20password.jpg)
+![My picture](assets/images/same_password.jpg)
 
 - try to use admin site without permission (the users have not permission to use the admin site):
-![My picture](assets/images/try%20to%20us%20eadmin%20site%20without%20permission.jpg)
+![My picture](assets/images/without_permission.jpg)
 
-- try to register without fill the necessary fields:
-![My picture](assets/images/fill%20the%20fields.jpg)
 
 ## Testing
 
@@ -152,9 +204,7 @@ It was tested on  Google Developper Tools and the website worked on these type o
 
 ### Validation with pythonchecker.com
 
-I validated every py file of my app with pythonchecker.com validator because the pep8online.com [expired](assets/images/pep8%20expired.jpg) and it is not working anymore as a validator. The most common error was that I did not put space around the operators. After the managing errors everything was all right according to the validator. You can see below an example for assessment after managing the errors (manage.py):
-
-![My Image](assets/images/manage%20py%20checking.jpg)
+I validated every py file of my app with pythonchecker.com validator because the pep8online.com expired and it is not working anymore as a validator. The most common error was that I did not put space around the operators. After the managing errors everything was all right according to the validator.
 
 ### Local testing
 
@@ -162,7 +212,7 @@ The buttons of the app were tested locally and these worked properly.
 
 ### Responsiveness
 
-I used Google Chrome Dev Tools for this exercise. I tested for mobile and desktop devices. According to the tool, some images were big for mobile devices and the downloads were slow. It is the reason for lower result but I could not decrease the size of the pictures because the average size was 55 kB. If I decrease the size more and more it is dangerous for resolution of pictures. 
+I used Google Chrome Dev Tools for this exercise. I tested for mobile and desktop devices. According to the tool, some images were big for mobile devices and the downloads were slow. It is the reason for lower result. 
 
 Lighthouse mobile assessment:
 ![My Image](assets/images/lighthouse_mobile_assessment.jpg)
@@ -180,7 +230,7 @@ I managed the versions with the following process:
 - I opened and developped the repository in GitPod and use during the development the different parts of User Stories
 - I used three parts of User Stories:Todo, In Progress and Done
 
-![My Image](assets/images/user%20stories.jpg)
+![My Image](assets/images/user_stories.jpg)
 
 - I created and developped varied files and folders in GitPod
 - I put the issues in the relevant part according to the phase of development (start in Todo and put the In Progress while I worked on it and put the Done if I finished the development)
@@ -195,7 +245,6 @@ The steps of the publishing on the Heroku were as follow:
     
     1. I created an app name and set the location (Europe)
     2. In the **"Settings"** I managed the config vars part
-![My Image](assets/images/settings%20config%20vars.jpg)
     3. In the buildpacks I chose heroku/python
     4. In the Deploy section I create a connection between GitHub and Heroku
     5. With the Deploy Branch button I created a deployed app
