@@ -86,12 +86,13 @@
                     </p>
                     <!-- The body of the comment goes before the | -->
                     {{ comment.body | linebreaks }}
+                    <!-- Create Delete and Update butons for every comments-->
                     <form method="comments">
                         {% csrf_token %}
                         <button type="delete" class="btn btn-delete btn-lg">Delete</button>
-                        <a href="/delete-comment/{{comment.name}}"></a>
+                        <a href="/on_delete.post.comments/{{comment.name}}"></a>
                         <button type="update" class="btn btn-update btn-lg">Update</button>
-                        <a href="/update-comment/{{comment.name}}"></a>
+                        <a href="/updated_on.post.comments/{{comment.name}}"></a>
                     </form>                    
                 </div>                
                 <!-- Our for loop ends here -->
