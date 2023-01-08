@@ -193,6 +193,9 @@ This blog has many useful parts which are help the users in one side but in the 
 - try to use admin site without permission (the users have not permission to use the admin site):
 ![My picture](assets/images/without_permission.jpg)
 
+## Bugs and unsolved challenges
+
+I created 'Delete' and 'Update' buttons under each comment but I could not link these buttons to the comments.
 
 ## Testing
 
