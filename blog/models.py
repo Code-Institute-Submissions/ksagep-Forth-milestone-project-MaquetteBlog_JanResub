@@ -2,18 +2,10 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
-from flask_login import UserMixin
 
 """Define the two variants of status"""
 STATUS = ((0, "Draft"), (1, "Published"))
 
-
-class User(models.Model, UserMixin):
-    name = models.CharField(max_length=80)
-    email = models.EmailField()
-    created_on = models.DateTimeField(auto_now_add=True)
-    post = models.FilteredRelation('comments')
-    comments = models.FilteredRelation('post')
 
 class Post(models.Model):
     """Describe the charactheristics of parts of post"""
@@ -59,9 +51,7 @@ class Comment(models.Model):
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
-    author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name='comments'
-        )
+    
 
     class Meta:
         """Define the ascending order of the comments"""
