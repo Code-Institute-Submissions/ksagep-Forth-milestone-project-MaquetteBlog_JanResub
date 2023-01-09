@@ -10,7 +10,7 @@ Design has been focused to *Desktop, Laptop and Tablet first* and *Responsive* b
 
 ## Who is this blog site for?
 
-This blog pages contains information about maquettes which are mainly aircrafts. These information would be interesting who makes maquette or who wants a little bit more info about a specific model.
+This blog pages contains information about maquettes which are mainly aircrafts. These information would be interesting who makes maquette or who wants more info about a specific model.
 
 ## What does this website do?
 
@@ -20,13 +20,13 @@ The website serves as a collection of pictures and short descriptions of differe
 
 ### Strategy Plane
 
-The pages were created in a simple way. The information, pictures are clear and serve to help the visitors of the website. The posts are following the same structure and containing the same 'like' and 'comments' icons. There are sort excerpts under the title of the posts. The comments built on a simple way and contain the name of the user, the date of commenting and finally the content of the comments. I created 'Delete' and 'Update' buttons under every comments.
+The pages were created in a simple way. The information, pictures are clear and serve to help the visitors of the website. The posts are following the same structure and containing the same 'like' and 'comments' icons. There are sort excerpts under the title of the posts. The comments contain the name of the user, the date of commenting and finally the content of the comments. I created 'Delete' and 'Update' buttons under every comments.
 
 ### Scope Plane
 
 In this project you can find the following features:
-* The header and footer are common in every pages (before login and after it)
-* Two different pages which are as follows:
+* The header and footer are common in every pages (after login)
+* Three different pages which are as follows:
 
 - Home page contains three posts and pictures and the possibilities of register or login. The step of visitor is depend that she/he/they visits the blog as registered user or not.
 
@@ -43,6 +43,10 @@ In this project you can find the following features:
 Under this part the registered users could like the post or comment it. I created a small warning message that the user cannot submit the empty comment form. Under the approved and posted comment there are two buttons: Delete and Update. These buttons provide possibilities for user, who commented the post, delete the own post or edit this. 
 
 ![My picture](assets/images/post_view_2.jpg)
+
+- The Register page provide the possibility to join the community of blog after the person create username and password.
+
+- The registered users can leave the blog via Sign out page 
 
 ### Structure Plane
 
@@ -85,7 +89,7 @@ I used one type of font whit two types of thin:
 
 ### Admin feature
 
-Admin or Superuser has special permission for blog site. She/he/they can sign-in to the blog.
+Admin or Superuser has special permission for blog site. She/he/they can sign-in to the blog via admin sign-in page.
 
 ![My picture](assets/images/admin_sign_in.jpg)
 
@@ -115,7 +119,7 @@ If the user wants to use the possibility of comment and like have to register He
 
 ![My picture](assets/images/register_page.jpg)
 
-Only the registered user can sign in the blog with username and password. You can find a small 'Remember Me' checkbox under the password which provide the possibility that the system will not forget the password of the user and next time do not have to type the password.
+Only the registered user can sign in the blog with username and password. You can find a small 'Remember Me' checkbox under the password which provide the possibility that the system will not forget the entry data and next time do not have to type these.
 
 ![My picture](assets/images/user_sign_in.jpg)
 
@@ -123,7 +127,7 @@ If the username and/or password was/were not correct you will get an error messa
 
 ![My picture](assets/images/incorrect_user_or_password.jpg)
 
-In the case of successful sign-in you can enter the blog and a short message will appear about it for **3 seconds**. After it the user can surf on the pages, add comments or likes to the posts.
+In the case of successful sign-in you can enter the blog and a short message will appear about it for **3 seconds** with the name of user. After it the user can surf on the pages, add comments or likes to the posts.
 
 ![My picture](assets/images/successful_user_login.jpg)
 
@@ -131,7 +135,7 @@ The authenticated users can leave comments for any posts. The length of the comm
 
 ![My picture](assets/images/user_comment.jpg)
 
-After click on the submit button a short warning message will appear on the screen: 'Your comment is awaiting for approval.'
+After click on the Submit button a short warning message will appear on the screen: 'Your comment is awaiting for approval.'
 
 ![My picture](assets/images/comment_approval.jpg)
 
@@ -146,6 +150,8 @@ User can comment any post if She/he/they want. Before the click on the 'Like' bu
 After click on the 'Like' button you can see on the screen the filled icon and the like counter will give plus one to the previous amount.
 
 ![My picture](assets/images/after_like.jpg)
+
+If the user change Her/his/their mind she/he/they can withdraw the like and the counter will dicrease the amount of like with one.
 
 When user finished Her/his/their surfing in the blog leave the page with log out button. On the screen will appear the 'Sign out' button and after click on it She/he/they will leave the page.
 
